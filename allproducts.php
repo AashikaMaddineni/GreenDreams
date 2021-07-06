@@ -23,7 +23,7 @@
                   $numOfCols = 4;
                   $rowCount = 0;
                   $bootstrapColWidth = 12 / $numOfCols;
-                  $sql = " SELECT * FROM items";
+                  $sql = "select * from items group by name";
                   if (!$con) {
 						die("Connection failed: " . mysqli_connect_error());
 				  }
